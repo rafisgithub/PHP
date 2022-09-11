@@ -1,0 +1,15 @@
+.foooter{
+    height: 40px;
+    background-color: lightslategrey;
+
+
+}
+.GalleryImage{
+    transition: 2s;
+}
+.GalleryImage:hover{
+    /*height: 300px;*/
+    /*width: 300px;*/
+    transform: scale(1.4);
+
+}
