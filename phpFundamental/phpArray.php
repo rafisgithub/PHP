@@ -112,8 +112,63 @@ $fontColor="#rafi45";
                 echo "<li>" . $StudentInfos[$i][$j] . "</li>";
             }
             echo "</ul>";
-            
-            
+        }
+            //Array Sorting
+            echo "<hr>";
+            echo "Array sorting <br>";
+
+            $names = array ("Rakib","Rafi","Shakib","Shopon","arif","Shaown","bipul");
+            $numbers = array (12,43,21,76,34,23,11,10,43,56);
+        
+            echo "<hr>";
+             echo "<h1>without sorting <h1> <br>";
+
+            for($i=0;$i<count($numbers);$i++){
+                echo  $numbers[$i]."<br>";
+            }
+
+            echo "<hr>";
+        echo "<h1> with sorting </h1> <br>";
+
+        sort($numbers);
+        for($i=0;$i<count($numbers);$i++){
+            echo  $numbers[$i]."<br>";
+        }
+
+        echo "<hr>";
+        echo "<h1> reverse sorting </h1> <br>";
+
+        rsort($numbers);
+        for($i=0;$i<count($numbers);$i++){
+            echo  $numbers[$i]."<br>";
+        }
+
+
+
+
+        echo "<hr>";
+        sort($names);
+        echo "<ol>";
+        for($i=0;$i<count($names);$i++){
+            echo "<li>". $names[$i]."<br> </li>";
+        }
+        echo "</ol>";
+
+
+
+        echo "<hr>";
+
+        $ages = array (
+            "rafi" => 25,
+            "shakib" =>21,
+            "arif" =>22,
+            "bipul" =>30,
+
+        );
+        // asort($ages);
+        ksort($ages);
+        foreach($ages as $name=>$age){
+            echo "$name". " ". "$age". "<br>";
         }
 
         ?>
