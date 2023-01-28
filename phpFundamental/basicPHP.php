@@ -13,7 +13,8 @@ $fontColor="#rafi45";
       /* .phpcoding { width: 600px; margin: 0 auto; background:#ddd; } */
       .phpcoding { width: 600px; margin: 0 auto; background:<?php echo "#ddd" ?> }
 
-      .header, .footer{ background:#444;<?php echo $bgcolor ?>;text-align: center; padding: 20px; }
+      .header{ background:#444;<?php echo $bgcolor ?>;text-align: center; padding: 20px;}
+      .footer { background:#000; color: green; text-align: center; padding: 15px;}
 
       .content { min-height: 400px; padding: 20px;}
 
@@ -81,7 +82,7 @@ $fontColor="#rafi45";
         var_dump($x);
         echo "<br>". $x[0] ."<br>";
 
-        //object
+        // Object
         class Students{ 
 
                   function department(){
@@ -106,6 +107,54 @@ $fontColor="#rafi45";
         //Resource 
         echo "In PHP, Resource is a special data type that refers to any external resource <br>";
         
+
+        //PHP Operators
+        echo "<br> PHP OPERATORS <br>";
+        echo " 1.Arithmetic operator <br>";
+        echo " 1.Assignment operator <br>";
+        echo " 1.Comparison operator <br>";
+        echo " 1.Increament/Decreament operator <br>";
+        echo " 1.Logical operator <br>";
+        echo " 1.String operator <br>";
+        echo " 1.Array operator <br>";
+   
+
+
+
+        //Array operator
+
+        $x= array(
+          "a" =>"Dhaka",
+          "b" =>"Mymonsing",
+          "c" => "Sylhet",
+        );
+
+        $y= array(
+          "d" => "Rajshahi",
+          "e" => "Comilla",
+
+        );
+        var_dump($x+$y); //Union
+
+        var_dump($x==$y); //Equal
+
+        var_dump($x === $y); //Identical
+
+        var_dump($x != $y); //inequal
+
+
+        //foreach loop
+        echo "<br> foreach loop <br>";
+
+        $colors = array("bule","red", "green","whilte");
+        foreach($colors as $color){
+          echo $color ."<br>";
+        }
+
+
+
+
+
 
         
 
