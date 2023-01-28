@@ -37,24 +37,52 @@
 
             <?php 
             echo "PHP function <br>";
-
-            function school ($x,$y){
-                echo "This is SOS school <br>";
-                echo "I'm a student of this this school.<br>";
-                $sum = $x+$y;
-                echo "Our class students :$sum <br>";
-
+            //no arguments no return value
+            echo "no arguments no return value <br>";
+            function sum(){
+                $x=10;
+                $y=20;
+                $sum=$x+$y;
+                echo "Sum is = $sum<br>";
             }
-            school(10,20);
+            sum();
 
-
-
+            //with arguments no return value
+            echo "with arguments no return value <br>";
             function studentInfo($name,$roll,$sn){
                 echo "Name: $name <br>";
                 echo "Roll: $roll <br>";
                 echo "School name: $sn <br>";
             }
             studentInfo('Rafi Ahmed', 'CSE-150','Sonargaon University');
+
+
+            //no argument with return value
+            echo "no argument with return value <br>";
+            function myFunction(){
+                $x=20;
+                $y=30;
+                return $x*$y;
+            }
+          $m= myFunction();
+           echo "$m <br>";
+
+
+           //with argument with return value 
+           echo "with argument with return value  <br>";
+           function subtraction($x,$y){
+            return $x-$y;
+           }
+           echo subtraction(30,10) ."<br>";
+           echo subtraction(40,10) ."<br>";
+           echo subtraction(50,10) ."<br>";
+           echo subtraction(60,10) ."<br>";
+
+
+
+
+        
+          
             ?>
         </section>
 
