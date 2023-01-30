@@ -4,6 +4,29 @@ $fonts = "arials";
 $bgcolor ="#FB043983";
 $fontColor="#rafi45";
 ?>
+ <?php
+
+//value initialized
+$name = $email = $website = $comment = $gender ="";
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  $name    = validate($_REQUEST['name']);
+  $email   = validate($_REQUEST['email']);
+  $website = validate($_REQUEST['website']);
+  $comment = $_REQUEST['comment'];
+  $gender  = validate($_REQUEST['gender']);
+}
+
+function validate($data){
+  $data = trim($data);
+  $data = stripcslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -73,35 +96,16 @@ $fontColor="#rafi45";
 
       </form>
 
-      <?php
-
-      //value initialized
-      $name = $email = $website = $comment = $gender ="";
-
-      if($_SERVER["REQUEST_METHOD"]=="POST"){
-        $name    = validate($_REQUEST['name']);
-        $email   = validate($_REQUEST['email']);
-        $website = validate($_REQUEST['website']);
-        $comment = $_REQUEST['comment'];
-        $gender  = validate($_REQUEST['gender']);
+      <?php 
 
         echo "Name :" . $name ."<br>";
         echo "Email :" . $email ."<br>";
         echo "Website :" . $website ."<br>";
         echo "Commnet :" . $comment ."<br>";
         echo "Gender :" . $gender ."<br>";
-      }
 
-      function validate($data){
-        $data = trim($data);
-        $data = stripcslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-
-      }
-
-   
-      ?>
+   ?>
+      
       </section>
 
     <section class="footer">
