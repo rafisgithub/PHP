@@ -4,7 +4,8 @@ $fonts = "arials";
 $bgcolor ="#FB043983";
 $fontColor="#rafi45";
 
-session_start();
+// session_start();
+setcookie('visitors' , "" , time()-3600);
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,6 +41,21 @@ session_start();
         echo date('h:i:sA'); 
         ?></p>
         <hr>
+
+
+        <?php 
+      if(!isset($_COOKIE['visitors'])){
+            
+    setcookie("Visitors", "1" , time()+86400, "/" or die("Could not set cookie!"));
+    echo "This is your first visit in this website..";
+
+      }else{
+        echo "You are our okd visitor.";
+      }
+
+      echo "cookie deleted";
+
+      ?>
 
       <?php 
 
