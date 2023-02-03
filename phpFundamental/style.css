@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+    padding:0px
+}
+
+.header {
+    height:100px;
+    background:#888;
+    text-align:center;
+}
+.content{
+    height:900px;
+    background-color: darkgrey;
+    text-align: center;
+    
+}
+
+.footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+.time{
+    position:relative;
+    float: right;
+    bottom: 50px;
+    right: 30px;
+}
