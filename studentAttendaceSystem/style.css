@@ -1,0 +1,173 @@
+/* Center the login form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Style the form elements */
+  label, input, button {
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, button {
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Style the form heading */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  
+  /* Style the error message */
+  p {
+    color: red;
+    text-align: center;
+  }
+  
+  /* Center the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Style the form elements */
+  label, input, button {
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, button {
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Style the form heading */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  
+  /* Style the success and error messages */
+  p.success {
+    color: green;
+    text-align: center;
+  }
+  
+  p.error {
+    color: red;
+    text-align: center;
+  }
+  
+  /* Center the heading and the button */
+h1, button {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style the heading */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+  
+  /* Style the button */
+  button {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+
+  
+
+  /* Center the video and the message */
+video, p {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Style the video */
+  video {
+    margin-top: 50px;
+    width: 80%;
+  }
+  
+  /* Style the message */
+  p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Style the error message */
+  p.error {
+    color: red;
+  }
+  
+  /* Style the success message */
+  p.success {
+    color: green;
+  }
+  

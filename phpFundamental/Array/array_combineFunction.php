@@ -20,6 +20,17 @@ print_r($combine)."<br>";
 
 
 print("<pre>");
+
+
+
+
+
+echo "array count \n";
+$names = array("Rafi", "meghla," ,"nurani", "parvez" , "Nurul Sheikh" , "Rafi" , "Rafi Ahmed");
+
+  print_r(array_count_values($names)); 
+
+
  ?>
 
 </section>
