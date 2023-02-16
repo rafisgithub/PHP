@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
 }
 
 // Connect to the database
-$db = new mysqli('localhost', 'username', 'password', 'attendance');
+$db = new mysqli('localhost', 'username', 'password', 'attendance_system');
 
 // Handle form submission
 if (isset($_POST['submit'])) {
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
   $present = isset($_POST['present']) ? 1 : 0;
 
   // Insert or update attendance record
-  $stmt = $db->prepare('INSERT INTO attendance (student_id, date, present) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE present = VALUES(present)');
+  $stmt = $db->prepare('INSERT INTO attendance_system (student_id, date, present) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE present = VALUES(present)');
   $stmt->bind_param('iss', $student_id, $date, $present);
   $stmt->execute();
   $stmt->close();
@@ -31,7 +31,7 @@ $result->close();
 
 // Get attendance records for today
 $date = date('Y-m-d');
-$result = $db->query("SELECT * FROM attendance WHERE date = '$date'");
+$result = $db->query("SELECT * FROM attendance_system WHERE date = '$date'");
 $attendance = $result->fetch_all(MYSQLI_ASSOC);
 $result->close();
 $attendance_by_student = array();

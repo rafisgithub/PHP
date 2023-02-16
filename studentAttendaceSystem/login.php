@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
 // Check if the form has been submitted
 if (isset($_POST['username']) && isset($_POST['password'])) {
   // Connect to the database
-  $db = new mysqli('localhost', 'username', 'password', 'attendance');
+  $db = new mysqli('localhost', 'username', 'password', 'attendance_system');
 
   // Get the user with the provided username and password
   $username = $db->real_escape_string($_POST['username']);
