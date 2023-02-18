@@ -3,13 +3,13 @@
 session_start();
 
 // Check if the user is logged in
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['root'])) {
   header('Location: login.php');
   exit();
 }
 
 // Connect to the database
-$db = new mysqli('localhost', 'username', 'password', 'attendance_system');
+$db = new mysqli('localhost', 'root', 'password', 'attendance_system');
 
 // Handle form submission
 if (isset($_POST['submit'])) {
@@ -50,7 +50,7 @@ foreach ($attendance as $record) {
 </head>
 <body>
   <h1>Student Attendance System</h1>
-  <p>Welcome, <?php echo $_SESSION['username']; ?>! <a href="logout.php">Logout</a></p>
+  <p>Welcome, <?php echo $_SESSION['root']; ?>! <a href="logout.php">Logout</a></p>
   <h2>Today's Attendance</h2>
   <p>Scan the QR code to mark your attendance:</p>
   <?php foreach ($students as $student): ?>

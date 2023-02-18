@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-$db = new mysqli('localhost', 'username', 'password', 'attendance_system');
+$db = new mysqli('localhost', 'root', 'password', 'attendance_system');
 
 // Get the student ID and date from the GET parameters
 $student_id = $_GET['student_id'];

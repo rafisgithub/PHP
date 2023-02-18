@@ -8,12 +8,12 @@ if (isset($_SESSION['user_id'])) {
 }
 
 // Check if the form has been submitted
-if (isset($_POST['username']) && isset($_POST['password'])) {
+if (isset($_POST['root']) && isset($_POST['password'])) {
   // Connect to the database
-  $db = new mysqli('localhost', 'username', 'password', 'attendance_system');
+  $db = new mysqli('localhost', 'root', '', 'attendance_system');
 
   // Get the user with the provided username and password
-  $username = $db->real_escape_string($_POST['username']);
+  $username = $db->real_escape_string($_POST['root']);
   $password = $db->real_escape_string($_POST['password']);
   $result = $db->query("SELECT id, username FROM users WHERE username = '$username' AND password = '$password'");
   $user = $result->fetch_assoc();
@@ -22,7 +22,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
   // If a user is found, log them in and redirect to the index page
   if ($user) {
     $_SESSION['user_id'] = $user['id'];
-    $_SESSION['username'] = $user['username'];
+    $_SESSION['root'] = $user['root'];
     header('Location: index.php');
     exit();
   } else {
@@ -41,7 +41,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
   <?php if (isset($error)): ?>
     <p><?php echo $error; ?></p>
   <?php endif; ?>
-  <form method="POST">
+  <form method="POST" action="./index.php">
     <div>
       <label for="username">Username:</label>
       <input type="text" name="username" id="username">

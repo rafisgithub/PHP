@@ -19,7 +19,7 @@ $error = '';
 // Check if form has been submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   // Get form data
-  $username = trim($_POST['username']);
+  $username = trim($_POST['root']);
   $password = trim($_POST['password']);
 
   // Validate form data
