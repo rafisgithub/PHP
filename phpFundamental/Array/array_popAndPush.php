@@ -2,7 +2,7 @@
 
 <section class="content">
     <hr>
-    <h2>PHP array() Function -array_pad()</h2>
+    <h2>PHP array() Function -array_pop() and array_push()</h2>
     <hr>
 
 
