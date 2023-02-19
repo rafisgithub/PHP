@@ -33,3 +33,23 @@ body {
       margin: 0;
       color: <?php echo $fontColor ?>;
     }
+
+    #myForm{
+      width:400px;
+      border:1px solid #fff;
+      padding :10px;
+    }
+
+    .tblone td{
+      width:430px;
+      border:1px solid; #fff;
+      margin:20px;
+      padding:5px 10px;
+
+    }
+    table.tblone tr:nth-child(2n+1){
+      background:#fff;height:30px;
+    }
+    table.tblone tr:nth-child(2n){
+      background:#f1ff1;height:30px;
+    }

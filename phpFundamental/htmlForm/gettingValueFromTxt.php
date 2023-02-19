@@ -1,4 +1,4 @@
-<?php include('.//header.php') ?>
+<?php include('./header.php') ?>
 
 <?php
 if(isset($_POST['userName'])){
@@ -27,4 +27,4 @@ if(isset($_POST['userName'])){
 </form>
 
 </section>
-<?php include('.//footer.php') ?>
+<?php include('./footer.php') ?>

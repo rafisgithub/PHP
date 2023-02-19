@@ -20,6 +20,6 @@ $fontColor = "#rafi45";
 
     <section class="header">
       <h2>PHP Fundamentals</h2>
-      <h3>HP superglobal variables</h3>
+      <h3>HTML Form with php and JavaScrip</h3>
 
     </section>

@@ -1,4 +1,4 @@
-<?php include('.//header.php') ?>
+<?php include('./header.php') ?>
 
 <script>
 
@@ -6,13 +6,13 @@
        var name = document.myForm.userName.value;
 
        var showData = "User Name : " +name;
-       document.getElementById('output').innerHTML = showData
+       document.getElementById('output').innerHTML=showData;
     }
 </script>
 
 <section class="content">
-
-<form action="" method="post"  name="myForm"  onsubmit="formFunction(); return false; ">
+<div id="output"></div>
+<form name="myForm" id="myForm" onsubmit="formFunction(); return false; ">
     <table>
         <tr>
             <td>UserName:</td>
@@ -30,7 +30,7 @@
     </table>
 </form>
 
-<div id="output"></div>
-
 </section>
-<?php include('.//footer.php') ?>
+
+
+<?php include('./footer.php') ?>
