@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header code start*/
+.header-full {
+    background-color:lightgrey;
+    
+  
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    line-height: 40px;
+    
+
+}
+.heading img{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    color:red;
+    text-transform: uppercase;
+    padding-right: 1020px;
+    
+}
+.header ul {
+    overflow: hidden;
+}
+
+.header ul li {
+    float: right;
+}
+.header ul li a {
+    color: black;
+}
+
+.header ul li a:hover {
+    color: red;
+}
+button {
+    height: max-content;
+    width: 150px;
+}
+.SignBTN {
+    position: relative;
+    right: 2rem;
+    top: 0.4rem;
+}
+/*cards with carosuel*/
+@media screen and (min-width:577px){
+.cards-wrapper{
+    display: flex;
+
+}
+.card{
+    margin: 0 .5em;
+    width: calc(100%/3);
+}
+.images-wrapper{
+    height: 22vw;
+    margin: 0 auto;
+    /**
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    **/
+}
+}
+@media screen and (max-width:577px){
+    .card:not(:first-child){
+        display: none;
+    }
+    
+}
+.images-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.reports{
+    justify-content: left;
+    color: red;
+   padding: 4px;
+}
+.card-title{
+    color: red;
+}
+.card-text{
+    overflow: hidden;
+}
+
+/* cards with messages*/
+@media screen and (min-width:577px){
+    .container2{
+        display: flex;
+    
+    }
+    .card{
+        margin: 0 .5em;
+        width: calc(100%/3);
+    }
+    .video-message{
+        width:100%;
+        height: 100%;
+    }
+    }
+    @media screen and (max-width:577px){
+        .card:not(:first-child){
+            display: none;
+        }
+        
+    }
+    /*Media queries for submit button position (medium devices) */
+
+    @media screen and (max-width:1024px){
+        button{
+          position: relative;
+          right: 10rem;
+           
+        }
+    }
+
+
+      /*Media queries for submit button position (small devices) */
+
+    @media screen and (max-width:600px){
+        button{
+            text-align: center;
+            position: relative;
+            left: 29%;
+           
+        }
+    }
