@@ -1,0 +1,62 @@
+h1{color: rgb(187, 69, 69);}
+h2{color: rgb(58, 58, 151);}
+h3{color: rgb(49, 98, 49);}
+h4{ color: rgb(169, 108, 108);}
+h5{color: rgb(163, 134, 80);}
+h6{ color: #943434;}
+p{text-align: center;}
+
+th, td {
+    border: 1px solid black;
+  }
+  tr:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+  .header-section{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(20, 110, 255);
+    color: #fff;
+  }
+  .header-section nav{
+    float: right;
+    width: 50%;
+  }
+  .header-section nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+  }
+  .header-section nav a:hover{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #13b6e7;
+  }
+  .body-section{
+    height: 600px;
+    background-color: #ccc;
+    text-align: left;
+  }
+  .footer-section{
+    height: 40px;
+    text-align: center;
+    background-color: black;
+    columns: #fff;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  .small-footer{
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .body-section p{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+  }
